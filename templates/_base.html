@@ -1,7 +1,7 @@
 <!-- templates/_base.html -->
-
+{% comment %} 
 {% load compress %}
-{% load static %}
+{% load static %} {% endcomment %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,10 +11,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Django + Tailwind CSS + Flowbite</title>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    {% compress css %}
-    <link rel="stylesheet" href="{% static 'src/output.css' %}">
-    {% endcompress %}
+  {% comment %} 
+      {% compress css %}
+      <link rel="stylesheet" href="{% static 'src/output.css' %}">
+      {% endcompress %} {% endcomment %}
 
 </head>
 
