@@ -131,3 +131,4 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'compressor.finders.CompressorFinder',
 )
+AUTH_USER_MODEL = "users.UserProfile"

@@ -1,0 +1,18 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+    <form action="{% url 'login_profile' %}" method="post">
+
+        {% csrf_token %}
+        
+        <input type="text" name="email" placeholder="email kiriting">
+        <input type="text" name="password" placeholder="parol kiriting">
+
+        <button type="submit">Kirish</button>
+
+    </form>
+
+{% endblock content %}
+
+

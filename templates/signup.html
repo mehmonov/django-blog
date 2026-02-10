@@ -1,0 +1,24 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+
+
+<form action="{% url 'user_sign' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="first_name", placeholder="ismingizni kiriting">
+    <input type="text" name="last_name", placeholder="familiyangizni kiriting">
+    
+    <input type="email" name="email" placeholder="email kiriting" >
+    <input type="password" name="password"  placeholder="parol kiriting">
+    <button type="submit">Yuborish</button>
+</form>
+
+<h1>
+    Tizimga kirish
+
+    <a href="{% url 'login_profile' %}">Tizimga kirish</a>
+</h1>
+
+
+{% endblock content %}

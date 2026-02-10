@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+    <h1> profilega hush kelibsiz {{request.user.first_name}} / {{request.user.last_name}} {{request.user.email}} </h1>
+
+    <a href="{% url 'user_logout' %}">Profildan chiqish</a>
+
+{% endblock content %}
+
+
+
